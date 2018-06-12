@@ -2,8 +2,14 @@ from os import environ as ENV
 from subprocess import Popen, PIPE
 from os import popen
 from static.classes.datacontroller.SQLController import SQLCloud
-serverpath = ENV['CLOUD_PROJECT_PATH']
 
+"""
+Plik wykorzystywany dla testowania logowania
+dla konsoli administracjyjnej
+
+@Serhii Riznychuk
+"""
+serverpath = ENV['CLOUD_PROJECT_PATH']
 
 def testUser(login, haslo) -> bool:
     SQL = SQLCloud()
