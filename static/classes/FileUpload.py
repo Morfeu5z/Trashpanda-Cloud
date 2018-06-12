@@ -5,6 +5,13 @@ import os
 from static.tool.FileManager import FileManager
 from static.classes.datacontroller.SQLController import SQLCloud
 
+"""
+Klasa tymczasowa, przechowuje dane o pliku, ktory zostal wlasnie wrzucony na serwer.
+Sluzy do szybkiej i porecznej aktualizacji bazy danych
+
+Autor: Rychel Mikołaj
+"""
+
 class Uploaded_File():
     def __init__(self):
         self.ID_file = ""
@@ -31,6 +38,12 @@ class Uploaded_File():
         self.OwnerID = str(google_ID)
         self.Description = description
 
+"""
+Uploads the shit
+
+Autor: Rychel Mikołaj
+"""
+        
     def uploadTheShit(self):
         try:
             """Inicjalizacja SQL controller'a"""
@@ -66,8 +79,16 @@ class Uploaded_File():
             print("Blad")
             raise ValueError()
 
+            
+
 class FileUpload():
 
+    
+"""
+Przygotowuje listę plików do upload'u, wykonuje sprawdzenie zgodnosci z polityka aplikacji.
+
+Autor: Rychel Mikołaj
+"""
     @staticmethod
     def upload(REQUESTED_FILE, path, google_ID, Description):
         DUMP_DIR = "/srv/DUMP/"
@@ -119,7 +140,11 @@ class FileUpload():
             print(Ex)
 
         return statusList
+"""
+Liczenie hashsumy dla zawartosci pliku
 
+Autor: Rychel Mikołaj
+"""
 
     @staticmethod
     def countHashSum(destination : str):
