@@ -1,7 +1,12 @@
 # Class file
 from static.classes.interfaces.IFile import File 
 
+"""
+Klasa reprezentacyjna pliku, wykorzystywana do przekazywania informacji o plikach
+do widoków.
 
+Autor: Rychel Mikołaj
+"""
 class File(File):
 
     def __init__(self, data: list):
