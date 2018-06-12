@@ -13,5 +13,3 @@ class ConsoleTemplate(object):
                                  |_|                            
         """
         return string
-
-"""
