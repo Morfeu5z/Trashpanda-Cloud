@@ -1,8 +1,8 @@
 # Class file
-import static.classes.interfaces.IFile as IFile
+from static.classes.interfaces.IFile import File 
 
 
-class File(IFile.File):
+class File(File):
 
     def __init__(self, data: list):
         self.fileID=""
