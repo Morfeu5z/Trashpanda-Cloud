@@ -14,15 +14,4 @@ class ConsoleTemplate(object):
         """
         return string
 
-    @staticmethod
-    def Raccoon():
-        string = """
-                   __        .-.
-               .-"` .`'.    /\\|  
-       _(\-/)_" ,  .   ,\  /\\\/
-      {(#b^d#)} .   ./,  |/\\\/
-      `-.(Y).-`  ,  |  , |\.-`
-           /~/,_/~~~\,__.-`
-          ////~    // ~\\
-        ==`==`   ==`   ==`
 """
