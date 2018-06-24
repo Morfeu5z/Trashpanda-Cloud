@@ -42,8 +42,7 @@ class Uploaded_File():
 Uploads the shit
 
 Autor: Rychel Mikołaj
-"""
-        
+"""  
     def uploadTheShit(self):
         try:
             """Inicjalizacja SQL controller'a"""
@@ -78,15 +77,11 @@ Autor: Rychel Mikołaj
             print(m)
             print("Blad")
             raise ValueError()
-
             
-
+            
 class FileUpload():
-
-    
 """
 Przygotowuje listę plików do upload'u, wykonuje sprawdzenie zgodnosci z polityka aplikacji.
-
 Autor: Rychel Mikołaj
 """
     @staticmethod
